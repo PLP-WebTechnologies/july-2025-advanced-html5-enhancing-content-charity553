@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Enhanced HTML5 Content & Mastering Forms</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      background-color: #f8f9fa;
+      color: #333;
+    }
+    header, main, footer {
+      margin-bottom: 30px;
+    }
+    header {
+      text-align: center;
+      background-color: #007bff;
+      color: white;
+      padding: 15px;
+      border-radius: 8px;
+    }
+    section {
+      margin-top: 20px;
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    }
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      margin-top: 10px;
+    }
+    table, th, td {
+      border: 1px solid #ccc;
+    }
+    th, td {
+      padding: 10px;
+      text-align: left;
+    }
+    fieldset {
+      border: 1px solid #ccc;
+      padding: 15px;
+      border-radius: 8px;
+      margin-bottom: 15px;
+    }
+    legend {
+      font-weight: bold;
+      color: #007bff;
+    }
+    label {
+      display: block;
+      margin-top: 10px;
+      font-weight: 600;
+    }
+    input, select, textarea {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    input[type="submit"], input[type="reset"] {
+      width: auto;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      margin-right: 10px;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+    input[type="submit"]:hover, input[type="reset"]:hover {
+      background-color: #0056b3;
+    }
+    footer {
+      text-align: center;
+      color: #666;
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Enhancing HTML5 Content & Mastering Forms</h1>
+    <p>A demonstration of semantic HTML, lists, tables, media, and HTML5 form validation</p>
+  </header>
+
+  <main>
+    <!-- Section 1: Lists -->
+    <section>
+      <h2>1. HTML5 Lists</h2>
+      <p>Below are examples of ordered, unordered, and description lists:</p>
+
+      <h3>Ordered List – Steps to Create a Web Page</h3>
+      <ol>
+        <li>Plan your layout and content</li>
+        <li>Write HTML structure</li>
+        <li>Add CSS for styling</li>
+        <li>Enhance with media and interactivity</li>
+      </ol>
+
+      <h3>Unordered List – Favorite Web Technologies</h3>
+      <ul>
+        <li>HTML5</li>
+        <li>CSS3</li>
+        <li>JavaScript</li>
+        <li>Dart & Flutter</li>
+      </ul>
+
+      <h3>Description List – Key HTML5 Elements</h3>
+      <dl>
+        <dt><strong>&lt;section&gt;</strong></dt>
+        <dd>Groups related content together semantically.</dd>
+        <dt><strong>&lt;article&gt;</strong></dt>
+        <dd>Represents a standalone piece of content.</dd>
+        <dt><strong>&lt;figure&gt;</strong></dt>
+        <dd>Encapsulates media like images or videos with captions.</dd>
+      </dl>
+    </section>
+
+    <!-- Section 2: Table -->
+    <section>
+      <h2>2. HTML5 Table</h2>
+      <p>Example of a well-structured table for displaying course information:</p>
+
+      <table>
+        <caption><strong>Available Courses</strong></caption>
+        <thead>
+          <tr>
+            <th>Course Name</th>
+            <th>Duration</th>
+            <th>Level</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>HTML & CSS Basics</td>
+            <td>4 Weeks</td>
+            <td>Beginner</td>
+          </tr>
+          <tr>
+            <td>JavaScript Fundamentals</td>
+            <td>6 Weeks</td>
+            <td>Intermediate</td>
+          </tr>
+          <tr>
+            <td>Flutter App Development</td>
+            <td>8 Weeks</td>
+            <td>Advanced</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Section 3: Media -->
+    <section>
+      <h2>3. Embedding Media</h2>
+      <p>HTML5 makes it simple to embed images, audio, and video content.</p>
+
+      <figure>
+        <img src="https://via.placeholder.com/500x250" alt="Placeholder image of web design" width="100%">
+        <figcaption>Figure 1: Example of responsive image embedding</figcaption>
+      </figure>
+
+      <audio controls>
+        <source src="sample-audio.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+
+      <video controls width="100%">
+        <source src="sample-video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </section>
+
+    <!-- Section 4: HTML5 Form -->
+    <section>
+      <h2>4. Registration Form</h2>
+      <p>This form demonstrates HTML5 attributes for structure, accessibility, and validation.</p>
+
+      <form action="#" method="post" autocomplete="on">
+        <fieldset>
+          <legend>Personal Information</legend>
+          <label for="fullname">Full Name:</label>
+          <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required minlength="3">
+
+          <label for="email">Email Address:</label>
+          <input type="email" id="email" name="email" placeholder="example@mail.com" required>
+
+          <label for="dob">Date of Birth:</label>
+          <input type="date" id="dob" name="dob" required>
+
+          <label for="gender">Gender:</label>
+          <select id="gender" name="gender" required>
+            <option value="">--Select--</option>
+            <option>Female</option>
+            <option>Male</option>
+            <option>Other</option>
+          </select>
+        </fieldset>
+
+        <fieldset>
+          <legend>Account Details</legend>
+          <label for="username">Username:</label>
+          <input type="text" id="username" name="username" placeholder="Choose a username" required pattern="[A-Za-z0-9]{5,15}" title="5–15 letters or numbers">
+
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" placeholder="Enter a strong password" required minlength="6">
+
+          <label for="confirm">Confirm Password:</label>
+          <input type="password" id="confirm" name="confirm" placeholder="Re-enter password" required minlength="6">
+        </fieldset>
+
+        <fieldset>
+          <legend>Preferences</legend>
+          <label>
+            <input type="checkbox" name="updates" checked> Subscribe to email updates
+          </label>
+
+          <label for="color">Favorite Color:</label>
+          <input type="color" id="color" name="color">
+
+          <label for="bio">Short Bio:</label>
+          <textarea id="bio" name="bio" rows="4" placeholder="Tell us something about yourself..."></textarea>
+        </fieldset>
+
+        <input type="submit" value="Submit Form">
+        <input type="reset" value="Reset Form">
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Charity Koki Mulei | HTML5 Mastery Assignment</p>
+  </footer>
+
+</body>
+</html>
